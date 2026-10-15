@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+    <style>
+        body {
+            /* Pink background as requested ("Pink? What's wrong with pink?") */
+            background-color: pink;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Main title: white, centered, bigger, with a special character */
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 3rem;
+            margin-top: 40px;
+        }
+
+        /* Container for the two images side by side */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        /* Individual shop box containing image and link */
+        .shop-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .shop-box img {
+            width: 250px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .shop-box a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .shop-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer section with horizontal line and copyright */
+        footer {
+            width: 100%;
+            margin-top: auto;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid white;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: flex-end; /* Aligned on the right side */
+            font-style: italic;
+            font-family: monospace;
+            color: #333;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Title with white color, centered, and a special character (!) -->
+    <h1>Online Shops &amp; More!</h1>
+
+    <!-- Two images side by side representing online shops -->
+    <div class="image-container">
+        <!-- Shop 1 -->
+        <div class="shop-box">
+            <img src="https://picsum.photos/250/150?random=10" alt="Amazon Shop">
+            <a href="https://www.amazon.com" target="_blank">Amazon</a>
+        </div>
+
+        <!-- Shop 2 -->
+        <div class="shop-box">
+            <img src="https://picsum.photos/250/150?random=20" alt="eBay Shop">
+            <a href="https://www.ebay.com" target="_blank">eBay</a>
+        </div>
+    </div>
+
+    <!-- Footer containing horizontal line and right-aligned copyright -->
+    <footer>
+        <hr>
+        <div class="footer-content">
+            &copy; wil 2026
+        </div>
+    </footer>
+
+</body>
+</html>
