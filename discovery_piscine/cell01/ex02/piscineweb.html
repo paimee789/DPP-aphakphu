@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Box Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #555555;
+        }
+        td {
+            border: 1px solid #555555;
+            height: 120px;
+            padding: 15px;
+            vertical-align: middle;
+            font-size: 18px;
+        }
+        .first-cell {
+            background-color: #b5be7a; /* Olive green color of your choice */
+            width: 50%;
+        }
+        .second-cell {
+            background-color: #f5bfae; /* Salmon pink color of your choice */
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td class="first-cell">First cell</td>
+            <td class="second-cell">Second cell</td>
+        </tr>
+    </table>
+
+</body>
+</html>
