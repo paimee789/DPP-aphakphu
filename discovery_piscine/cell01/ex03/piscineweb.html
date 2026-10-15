@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piscine Web</title>
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column; /* Stack the header and the image container vertically */
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 20px; /* Space between header and image row */
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* Container for the images to place them side-by-side horizontally */
+        .image-container {
+            display: flex;
+            gap: 30px; /* Space between the two photo columns */
+            flex-wrap: wrap; /* Allows wrapping on smaller mobile screens */
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        /* Individual wrapper for each image/text pair */
+        .image-box {
+            display: flex;
+            flex-direction: column; /* Stack text above photo if needed */
+            align-items: center;
+            gap: 10px; /* Space between text and photo */
+        }
+
+        /* Style specifically for the text above photo 2 */
+        .image-box p {
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        img {
+            max-width: 300px; /* Limits the image width */
+            height: auto;      /* Keeps correct proportions */
+            border-radius: 8px; /* Optional: rounds the corners */
+            display: block;    /* Removes extra spacing below image */
+        }
+
+        /* Optional: adds a subtle visual cue or removes underline for linked images */
+        a img {
+            border: 3px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        a img:hover {
+            border-color: #007bff; /* Highlights image slightly when hovered */
+        }
+    </style>
+</head>
+<body>
+    <h1>Piscine Web</h1>
+    
+    <!-- This container holds your photos side-by-side -->
+    <div class="image-container">
+        <!-- First Photo with a link to YouTube -->
+        <div class="image-box">
+            <a href="https://www.youtube.com/watch?v=INscMGmhmX4" target="_blank">
+                <img src="https://picsum.photos/300/200?random=1" alt="First Image">
+            </a>
+        </div>
+
+        <!-- Second Photo with text on top -->
+        <div class="image-box">
+            <p>Programmers while reviewing the codes</p>
+            <img src="https://picsum.photos/300/200?random=2" alt="Second Image">
+        </div>
+    </div>
+</body>
+</html>
