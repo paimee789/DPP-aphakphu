@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNCF Drop-down Menu Sandwich</title>
+    <style>
+        body {
+            background-color: #f5f3ef;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Dropdown Container */
+        .sandwich-menu {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* The Top Baguette Crust (Trigger Button) */
+        .baguette-top {
+            background: linear-gradient(to bottom, #e3b47c, #c59152);
+            color: #4a2e12;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border: 2px solid #8c5828;
+            border-radius: 25px 25px 8px 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .baguette-top:hover {
+            background: linear-gradient(to bottom, #ebbc84, #d19d5c);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+        }
+
+        /* The Sandwich Filling Layers (Dropdown Content) */
+        .sandwich-layers {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            border-radius: 0 0 15px 15px;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        /* Show layers on hover (No JavaScript needed!) */
+        .sandwich-menu:hover .sandwich-layers {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Individual Filling Styles */
+        .layer {
+            padding: 10px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .butter {
+            background-color: #fff9db;
+            color: #8c7309;
+            border-left: 2px solid #c59152;
+            border-right: 2px solid #c59152;
+        }
+
+        .ham {
+            background-color: #f28b82;
+            color: #5c1d17;
+            border-left: 2px solid #c59152;
+            border-right: 2px solid #c59152;
+        }
+
+        .cheese {
+            background-color: #fbc02d;
+            color: #4e3500;
+            border-left: 2px solid #c59152;
+            border-right: 2px solid #c59152;
+        }
+
+        /* The Bottom Baguette Crust */
+        .baguette-bottom {
+            background: linear-gradient(to bottom, #c59152, #a7743b);
+            color: #4a2e12;
+            padding: 15px 30px;
+            border: 2px solid #8c5828;
+            border-radius: 8px 8px 25px 25px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sandwich-menu">
+        <!-- Top Baguette (Menu Button) -->
+        <div class="baguette-top">🥖 SNCF Sandwich Menu ▾</div>
+        
+        <!-- Dropdown Layers -->
+        <div class="sandwich-layers">
+            <div class="layer butter">Layer 1: French Butter (Doux)</div>
+            <div class="layer ham">Layer 2: Artisanal Jambon Blanc</div>
+            <div class="layer cheese">Layer 3: Emmental Cheese Slice</div>
+            <div class="baguette-bottom">🥖 Crust Bottom</div>
+        </div>
+    </div>
+
+</body>
+</html>
